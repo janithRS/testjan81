@@ -35,7 +35,7 @@ service /gql on new graphql:Listener(8070) {
     # + return - string name with greeting message or error
     resource function get greeting(string name) returns string|error {
         if name is "" {
-            return error("name should not be empty!");
+            return error("rname should not be empty!");
         }
         return "Hello, " + name;
     }
