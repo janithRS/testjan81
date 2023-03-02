@@ -21,7 +21,7 @@ service /welcome on new http:Listener(6070) {
     }
 }
 
-service /gql on new graphql:Listener(8090) {
+service /gql on new graphql:Listener(8070) {
 
     # A resource for generating greetings
     # Example query:
