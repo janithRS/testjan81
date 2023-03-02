@@ -7,7 +7,7 @@ type Greeting record {
     string message;
 };
 
-service / on new http:Listener(8090) {
+service /test2 on new http:Listener(8090) {
     resource function get .(string name) returns Greeting {
         Greeting greetingMessage = {"from" : "Choreo", "to" : name, "message" : "Welcome to Choreo 3!"};
         return greetingMessage;
@@ -21,7 +21,7 @@ service /welcome on new http:Listener(6070) {
     }
 }
 
-service /gql on new graphql:Listener(8070) {
+service / on new graphql:Listener(8070) {
 
     # A resource for generating greetings
     # Example query:
