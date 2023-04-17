@@ -12,4 +12,3 @@ service / on new http:Listener(8090) {
         return greetingMessage;
     }
 }
-
